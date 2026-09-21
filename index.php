@@ -310,7 +310,7 @@ body {
   width: 816px;
   min-height: 1056px;
   background: #fff;
-  padding: 54px 80px 54px 80px;
+  padding: 32px 80px 32px 80px;
   box-shadow: 0 4px 32px rgba(0,0,0,.15);
   font-family: 'Times New Roman', Times, serif;
   font-size: 10.5pt;
@@ -320,13 +320,13 @@ body {
 }
 
 /* ── Resume header ── */
-.r-header { text-align: center; margin-bottom: 6pt; }
+.r-header { text-align: center; margin-bottom: 4pt; }
 .r-name { font-size: 21pt; font-weight: bold; letter-spacing: .3px; margin-bottom: 2pt; }
-.r-contact { font-size: 10pt; line-height: 1.5; }
+.r-contact { font-size: 10pt; line-height: 1.3; }
 .r-contact a { color: #1155cc; text-decoration: underline; }
 
 /* ── Section ── */
-.r-section { margin-top: 6pt; }
+.r-section { margin-top: 4pt; }
 .r-section-title {
   font-size: 10.5pt;
   font-weight: bold;
@@ -345,22 +345,23 @@ body {
 .r-skills li { font-size: 10pt; line-height: 1.24; }
 
 /* ── Experience ── */
-.r-exp { margin-bottom: 6pt; }
+.r-exp { margin-bottom: 4pt; }
 .r-row { display: flex; justify-content: space-between; align-items: baseline; }
 .r-company { font-weight: bold; font-size: 10.5pt; }
 .r-date { font-size: 10pt; white-space: nowrap; }
 .r-jobtitle { font-style: italic; font-size: 10pt; }
 .r-loc { font-size: 10pt; }
-.r-bullets { list-style: disc; padding-left: 18pt; margin-top: 2pt; }
+.r-bullets { list-style: disc; padding-left: 18pt; margin-top: 1pt; }
 .r-bullets li { font-size: 10pt; line-height: 1.24; text-align: justify; }
 
 /* ── Projects ── */
-.r-proj { margin-bottom: 5pt; }
+.r-proj { margin-bottom: 3pt; }
 .r-proj-title { font-weight: bold; font-size: 10.5pt; }
 
 /* ── Education ── */
 .r-edu-inst { font-weight: bold; font-size: 10.5pt; }
 .r-edu-degree { font-style: italic; font-size: 10pt; }
+.r-edu-entry { page-break-inside: avoid; break-inside: avoid; }
 
 /* ═══════════════════════════════════════════════════════
    PRINT — only #resume, perfect fit
@@ -377,7 +378,7 @@ body {
     box-shadow: none;
     width: 8.5in;
     min-height: 11in;
-    padding: 0.56in 0.83in 0.56in 0.83in;
+    padding: 0.33in 0.83in 0.33in 0.83in;
     margin: 0;
     font-size: 10.5pt;
     line-height: 1.24;
@@ -495,56 +496,55 @@ let data = {
   email:    'nabeelshahzad88@gmail.com',
   linkedin: 'linkedin.com/in/nabeel-shehzad',
   github:   'github.com/Nabeel-Shehzad',
-  summary:  'Senior Software Engineer with over 5 years of experience specializing in AI-driven ecosystems and high-performance mobile applications. Expert in architecting RAG (Retrieval-Augmented Generation) pipelines, real-time Machine Learning ensembles, and scalable backend infrastructures. Proven track record in leading end-to-end development lifecycles for complex, multi-tenant production environments.',
+  summary:  'Full Stack Developer with 5+ years of experience building scalable web applications across the complete stack — from PHP and Node.js backends with MySQL/PostgreSQL databases to modern Next.js and React.js frontends. Proven track record delivering production systems including a full e-commerce platform, a school management system, and RESTful API integrations. Experienced in JWT authentication, role-based access control, database design, and clean coding practices.',
   skills: [
-    { label: 'AI & Machine Learning', items: 'RAG Architectures, Gemini AI API, NLP (mBERT, Bi-LSTM), ChromaDB (Vector DB).' },
-    { label: 'Languages',             items: 'Python (FastAPI), Dart (Flutter), JavaScript, Java, PHP, SQL, C++.' },
-    { label: 'Mobile/Web',            items: 'Flutter, WearOS, watchOS, React Native, Three.js, Material UI (MUI).' },
-    { label: 'Backend & DevOps',      items: 'Supabase (Auth/RLS), Firebase, JWT, GitHub Actions (CI/CD), Docker.' },
-    { label: 'Core CS',               items: 'System Design, Algorithm Optimization, Database Concurrency (2PL), Statistical Modeling.' },
+    { label: 'Backend',          items: 'PHP, Node.js, TypeScript, RESTful API Development, JWT Authentication, MySQL, PostgreSQL, Prisma ORM, Supabase.' },
+    { label: 'Frontend',         items: 'Next.js, React.js, JavaScript/TypeScript, HTML5, CSS3, Responsive Web Development, Material UI (MUI).' },
+    { label: 'DevOps & Tools',   items: 'Git, GitHub Actions (CI/CD), Docker, Firebase, Cloudinary.' },
+    { label: 'Other Languages',  items: 'Python (FastAPI), Dart (Flutter), Java, C++.' },
   ],
   experience: [
     {
       company: 'CodesMine Software Solutions', period: 'Jan 2023 – Present',
-      title: 'Senior Software Engineer',       location: 'Sialkot, Pakistan',
+      title: 'Senior Full Stack Developer',    location: 'Sialkot, Pakistan',
       bullets: [
-        'Leading the architecture of multi-tenant AI services, implementing secure data isolation and real-time streaming protocols.',
-        'Architecting specialized search engines for multilingual text databases, optimizing for sub-500ms retrieval latencies.',
-        'Spearheading the integration of LLMs into production workflows, focusing on context-aware retrieval and prompt engineering.',
-        'Managing full-stack performance tuning, including state management and advanced database concurrency control.',
+        'Developed and maintained full-stack web applications using PHP and Next.js/React, building and integrating RESTful APIs across the complete stack.',
+        'Designed and optimized MySQL and PostgreSQL databases, implementing indexing and query optimization for high-traffic workloads.',
+        'Implemented JWT-based authentication and role-based access control across multi-tenant production environments.',
+        'Managed full-stack performance tuning, including state management and advanced database concurrency control.',
       ]
     },
     {
       company: 'Infinky Solutions',   period: 'Jan 2021 – Dec 2022',
-      title: 'Mobile App Developer', location: 'Sialkot, Pakistan',
+      title: 'Software Developer',    location: 'Sialkot, Pakistan',
       bullets: [
-        'Developed and deployed high-traffic cross-platform mobile applications, improving user engagement by implementing responsive UIs.',
-        'Engineered robust offline-first synchronization modules using SQLite and background services for data consistency.',
-        'Collaborated with cross-functional teams to translate complex business requirements into technical specifications.',
+        'Built and integrated REST APIs for cross-platform mobile applications, ensuring data consistency across frontend and backend.',
+        'Designed relational database schemas and implemented offline-first data synchronization using SQLite.',
+        'Collaborated with cross-functional teams to deliver complex business requirements on schedule.',
       ]
     },
   ],
   projects: [
     {
+      title: 'MoboGadgets — Full Stack E-Commerce Platform', year: '2026',
+      bullets: [
+        'Built a complete e-commerce system: <strong>Next.js</strong> storefront + admin dashboard with <strong>Node.js</strong> backend and <strong>MySQL</strong> via Prisma ORM.',
+        'Designed relational database schema covering products, orders, customers, inventory, promo codes, and sales analytics.',
+        'Implemented <strong>JWT authentication</strong>, role-based access control, Cloudinary image uploads, and third-party API integrations.',
+      ]
+    },
+    {
+      title: 'MySchoolSystem — School Management System (PHP/MySQL)', year: '2024',
+      bullets: [
+        'Developed a comprehensive school management system using <strong>PHP</strong> and <strong>MySQL</strong> covering students, fees, attendance, and reporting.',
+        'Built RESTful API endpoints, role-based access (admin/teacher/student), and automated fee/expense tracking with PDF report generation.',
+      ]
+    },
+    {
       title: 'DocuMind — Document Intelligence Platform (AI/RAG)', year: '2026',
       bullets: [
-        'Architected a full-stack RAG pipeline: PDF extraction → recursive chunking → vector embeddings → generation.',
-        'Built a high-performance <strong>FastAPI</strong> backend with <strong>ChromaDB</strong> for real-time semantic document querying.',
-        'Implemented streaming AI responses using <strong>Server-Sent Events (SSE)</strong> and <strong>Dart Async Generators</strong> in Flutter.',
-      ]
-    },
-    {
-      title: 'SMS Spam Detection System (ML/NLP/Ensemble)', year: '2025',
-      bullets: [
-        'Engineered a hybrid classification ensemble (Naive Bayes, SVM, Bi-LSTM) with multilingual support via <strong>mBERT</strong>.',
-        'Integrated <strong>Adversarial Text Normalization</strong> and <strong>Adaptive Learning</strong> loops to combat evolving spam patterns.',
-      ]
-    },
-    {
-      title: 'Smart Hajj & Umrah Companion (Wearable Technology)', year: '2025',
-      bullets: [
-        'Developed a location-aware <strong>WearOS/watchOS</strong> solution with <strong>Gemini AI</strong> for real-time ritual guidance.',
-        'Integrated family safety features including geofencing and real-time location streaming via <strong>Firestore</strong>.',
+        'Architected a full-stack RAG pipeline with a <strong>FastAPI</strong> backend, <strong>PostgreSQL</strong>-compatible vector storage, and streaming API responses via SSE.',
+        'Built responsive frontend in <strong>Next.js</strong> consuming real-time streaming APIs, demonstrating full frontend/API integration.',
       ]
     },
   ],
@@ -659,7 +659,7 @@ function renderResume() {
   if (d.education.length) {
     html += `<div class="r-section"><div class="r-section-title">Education</div>`;
     d.education.forEach(e => {
-      html += `<div class="r-exp">
+      html += `<div class="r-exp r-edu-entry">
         <div class="r-row"><span class="r-edu-inst">${esc(e.institution)}</span><span class="r-date">${esc(e.period)}</span></div>
         <div class="r-row"><span class="r-edu-degree">${esc(e.degree)}</span><span class="r-loc">${esc(e.location)}</span></div>
       </div>`;
@@ -897,25 +897,26 @@ function exportPDF() {
     @page { size: 8.5in 11in; margin: 0; }
     * { margin:0; padding:0; box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
     body { font-family:'Times New Roman',Times,serif; font-size:10.5pt; line-height:1.24; color:#000; background:#fff; }
-    #resume { width:8.5in; min-height:11in; padding:0.56in 0.83in 0.56in 0.83in; }
-    .r-header{text-align:center;margin-bottom:6pt}
+    #resume { width:8.5in; min-height:11in; padding:0.33in 0.83in 0.33in 0.83in; }
+    .r-header{text-align:center;margin-bottom:4pt}
     .r-name{font-size:21pt;font-weight:bold;letter-spacing:.3px;margin-bottom:2pt}
-    .r-contact{font-size:10pt;line-height:1.5}
+    .r-contact{font-size:10pt;line-height:1.3}
     .r-contact a{color:#1155cc;text-decoration:underline}
-    .r-section{margin-top:6pt}
+    .r-section{margin-top:4pt}
     .r-section-title{font-size:10.5pt;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-bottom:.75pt solid #000;padding-bottom:1pt;margin-bottom:4pt}
     .r-summary{text-align:justify;font-size:10pt;line-height:1.26}
     .r-skills{list-style:disc;padding-left:18pt}
     .r-skills li{font-size:10pt;line-height:1.24}
-    .r-exp{margin-bottom:6pt}
+    .r-exp{margin-bottom:4pt}
     .r-row{display:flex;justify-content:space-between;align-items:baseline}
     .r-company{font-weight:bold;font-size:10.5pt}
     .r-date{font-size:10pt;white-space:nowrap}
     .r-jobtitle{font-style:italic;font-size:10pt}
     .r-loc{font-size:10pt}
-    .r-bullets{list-style:disc;padding-left:18pt;margin-top:2pt}
+    .r-bullets{list-style:disc;padding-left:18pt;margin-top:1pt}
     .r-bullets li{font-size:10pt;line-height:1.24;text-align:justify}
-    .r-proj{margin-bottom:5pt}
+    .r-proj{margin-bottom:3pt}
+    .r-edu-entry{page-break-inside:avoid;break-inside:avoid}
     .r-proj-title{font-weight:bold;font-size:10.5pt}
     .r-edu-inst{font-weight:bold;font-size:10.5pt}
     .r-edu-degree{font-style:italic;font-size:10pt}
