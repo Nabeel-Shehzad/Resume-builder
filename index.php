@@ -310,7 +310,7 @@ body {
   width: 816px;
   min-height: 1056px;
   background: #fff;
-  padding: 32px 80px 32px 80px;
+  padding: 26px 80px 26px 80px;
   box-shadow: 0 4px 32px rgba(0,0,0,.15);
   font-family: 'Times New Roman', Times, serif;
   font-size: 10.5pt;
@@ -320,13 +320,13 @@ body {
 }
 
 /* ── Resume header ── */
-.r-header { text-align: center; margin-bottom: 4pt; }
+.r-header { text-align: center; margin-bottom: 3pt; }
 .r-name { font-size: 21pt; font-weight: bold; letter-spacing: .3px; margin-bottom: 2pt; }
 .r-contact { font-size: 10pt; line-height: 1.3; }
 .r-contact a { color: #1155cc; text-decoration: underline; }
 
 /* ── Section ── */
-.r-section { margin-top: 4pt; }
+.r-section { margin-top: 3pt; }
 .r-section-title {
   font-size: 10.5pt;
   font-weight: bold;
@@ -334,7 +334,7 @@ body {
   letter-spacing: .4px;
   border-bottom: .75pt solid #000;
   padding-bottom: 1pt;
-  margin-bottom: 4pt;
+  margin-bottom: 3pt;
 }
 
 /* ── Summary ── */
@@ -345,7 +345,7 @@ body {
 .r-skills li { font-size: 10pt; line-height: 1.24; }
 
 /* ── Experience ── */
-.r-exp { margin-bottom: 4pt; }
+.r-exp { margin-bottom: 3pt; }
 .r-row { display: flex; justify-content: space-between; align-items: baseline; }
 .r-company { font-weight: bold; font-size: 10.5pt; }
 .r-date { font-size: 10pt; white-space: nowrap; }
@@ -378,7 +378,7 @@ body {
     box-shadow: none;
     width: 8.5in;
     min-height: 11in;
-    padding: 0.33in 0.83in 0.33in 0.83in;
+    padding: 0.27in 0.83in 0.27in 0.83in;
     margin: 0;
     font-size: 10.5pt;
     line-height: 1.24;
@@ -496,55 +496,55 @@ let data = {
   email:    'nabeelshahzad88@gmail.com',
   linkedin: 'linkedin.com/in/nabeel-shehzad',
   github:   'github.com/Nabeel-Shehzad',
-  summary:  'Full Stack Developer with 5+ years of experience building scalable web applications across the complete stack — from PHP and Node.js backends with MySQL/PostgreSQL databases to modern Next.js and React.js frontends. Proven track record delivering production systems including a full e-commerce platform, a school management system, and RESTful API integrations. Experienced in JWT authentication, role-based access control, database design, and clean coding practices.',
+  summary:  'Flutter Developer with 5+ years of experience building high-performance cross-platform mobile applications for iOS and Android. Specializing in Dart/Flutter with deep expertise in state management (BLoC, Riverpod), offline-first architecture, real-time data streaming, and AI/ML integration. Proven track record delivering production apps including wearable solutions, document intelligence platforms, and cross-platform mobile systems.',
   skills: [
-    { label: 'Backend',          items: 'PHP, Node.js, TypeScript, RESTful API Development, JWT Authentication, MySQL, PostgreSQL, Prisma ORM, Supabase.' },
-    { label: 'Frontend',         items: 'Next.js, React.js, JavaScript/TypeScript, HTML5, CSS3, Responsive Web Development, Material UI (MUI).' },
-    { label: 'DevOps & Tools',   items: 'Git, GitHub Actions (CI/CD), Docker, Firebase, Cloudinary.' },
-    { label: 'Other Languages',  items: 'Python (FastAPI), Dart (Flutter), Java, C++.' },
+    { label: 'Flutter & Mobile',  items: 'Flutter, Dart, BLoC, Riverpod, GetX, Provider, WearOS, watchOS, Cross-Platform Development (iOS & Android).' },
+    { label: 'Backend & APIs',    items: 'Node.js/NestJS, Prisma, MySQL, Redis, Firebase (Messaging, Analytics, Crashlytics), Supabase, REST APIs, Stripe, JWT Authentication.' },
+    { label: 'Cloud & AI',        items: 'AWS (EC2, S3), Gemini AI API, RAG Architectures, ChromaDB (Vector DB), NLP (mBERT, Bi-LSTM), Server-Sent Events (SSE).' },
+    { label: 'DevOps & Release',  items: 'Git, GitHub Actions (CI/CD), Docker, App Store & Google Play Release Management (Certificates, Code Signing, Compliance).' },
   ],
   experience: [
     {
       company: 'CodesMine Software Solutions', period: 'Jan 2023 – Present',
-      title: 'Senior Full Stack Developer',    location: 'Sialkot, Pakistan',
+      title: 'Senior Software Engineer',        location: 'Sialkot, Pakistan',
       bullets: [
-        'Developed and maintained full-stack web applications using PHP and Next.js/React, building and integrating RESTful APIs across the complete stack.',
-        'Designed and optimized MySQL and PostgreSQL databases, implementing indexing and query optimization for high-traffic workloads.',
-        'Implemented JWT-based authentication and role-based access control across multi-tenant production environments.',
-        'Managed full-stack performance tuning, including state management and advanced database concurrency control.',
+        'Led Flutter development for AI-driven mobile applications, integrating LLM APIs and real-time streaming protocols using Dart Async Generators and SSE.',
+        'Integrated Stripe payment processing and built secure payment-related backend APIs (e.g., truck permit application) with Node.js/NestJS.',
+        'Managed end-to-end App Store and Google Play releases — submissions, certificates, code signing, troubleshooting, and store compliance updates.',
+        'Implemented JWT authentication, CI/CD pipelines via GitHub Actions, and Firebase Analytics/Crashlytics for production monitoring.',
+        'Architected offline-first Flutter apps with SQLite and advanced state management (BLoC/Riverpod) across multi-platform codebases.',
       ]
     },
     {
-      company: 'Infinky Solutions',   period: 'Jan 2021 – Dec 2022',
-      title: 'Software Developer',    location: 'Sialkot, Pakistan',
+      company: 'Infinky Solutions',    period: 'Jan 2021 – Dec 2022',
+      title: 'Mobile App Developer',   location: 'Sialkot, Pakistan',
       bullets: [
-        'Built and integrated REST APIs for cross-platform mobile applications, ensuring data consistency across frontend and backend.',
-        'Designed relational database schemas and implemented offline-first data synchronization using SQLite.',
-        'Collaborated with cross-functional teams to deliver complex business requirements on schedule.',
+        'Developed and deployed cross-platform Flutter applications for iOS and Android, improving user engagement with responsive, animated UIs.',
+        'Engineered robust offline-first synchronization modules using SQLite and background services for reliable data consistency.',
+        'Collaborated with cross-functional teams to translate complex business requirements into polished Flutter interfaces.',
       ]
     },
   ],
   projects: [
     {
-      title: 'MoboGadgets — Full Stack E-Commerce Platform', year: '2026',
+      title: 'Truck Permit Application — Payments & Compliance (Flutter)', year: '2024',
       bullets: [
-        'Built a complete e-commerce system: <strong>Next.js</strong> storefront + admin dashboard with <strong>Node.js</strong> backend and <strong>MySQL</strong> via Prisma ORM.',
-        'Designed relational database schema covering products, orders, customers, inventory, promo codes, and sales analytics.',
-        'Implemented <strong>JWT authentication</strong>, role-based access control, Cloudinary image uploads, and third-party API integrations.',
+        'Built a <strong>Flutter</strong> app for truck permit management with <strong>Stripe</strong> integration for secure in-app payment processing.',
+        'Designed secure payment-related backend APIs and led App Store/Google Play submissions, certificates, and compliance updates.',
       ]
     },
     {
-      title: 'MySchoolSystem — School Management System (PHP/MySQL)', year: '2024',
+      title: 'DocuMind — Document Intelligence Platform (Flutter/AI)', year: '2026',
       bullets: [
-        'Developed a comprehensive school management system using <strong>PHP</strong> and <strong>MySQL</strong> covering students, fees, attendance, and reporting.',
-        'Built RESTful API endpoints, role-based access (admin/teacher/student), and automated fee/expense tracking with PDF report generation.',
+        'Built a <strong>Flutter</strong> frontend consuming real-time AI responses via Server-Sent Events (SSE) using Dart Async Generators.',
+        'Integrated a <strong>FastAPI</strong> RAG backend (PDF extraction → vector embeddings → ChromaDB) with streaming responses in the Flutter UI.',
       ]
     },
     {
-      title: 'DocuMind — Document Intelligence Platform (AI/RAG)', year: '2026',
+      title: 'Smart Hajj & Umrah Companion (WearOS/watchOS Flutter)', year: '2025',
       bullets: [
-        'Architected a full-stack RAG pipeline with a <strong>FastAPI</strong> backend, <strong>PostgreSQL</strong>-compatible vector storage, and streaming API responses via SSE.',
-        'Built responsive frontend in <strong>Next.js</strong> consuming real-time streaming APIs, demonstrating full frontend/API integration.',
+        'Developed a <strong>WearOS/watchOS</strong> Flutter solution with <strong>Gemini AI</strong> for real-time ritual guidance and location-aware features.',
+        'Integrated geofencing and real-time location streaming via <strong>Firestore</strong> with family safety and group tracking features.',
       ]
     },
   ],
@@ -897,17 +897,17 @@ function exportPDF() {
     @page { size: 8.5in 11in; margin: 0; }
     * { margin:0; padding:0; box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
     body { font-family:'Times New Roman',Times,serif; font-size:10.5pt; line-height:1.24; color:#000; background:#fff; }
-    #resume { width:8.5in; min-height:11in; padding:0.33in 0.83in 0.33in 0.83in; }
-    .r-header{text-align:center;margin-bottom:4pt}
+    #resume { width:8.5in; min-height:11in; padding:0.27in 0.83in 0.27in 0.83in; }
+    .r-header{text-align:center;margin-bottom:3pt}
     .r-name{font-size:21pt;font-weight:bold;letter-spacing:.3px;margin-bottom:2pt}
     .r-contact{font-size:10pt;line-height:1.3}
     .r-contact a{color:#1155cc;text-decoration:underline}
-    .r-section{margin-top:4pt}
-    .r-section-title{font-size:10.5pt;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-bottom:.75pt solid #000;padding-bottom:1pt;margin-bottom:4pt}
+    .r-section{margin-top:3pt}
+    .r-section-title{font-size:10.5pt;font-weight:bold;text-transform:uppercase;letter-spacing:.4px;border-bottom:.75pt solid #000;padding-bottom:1pt;margin-bottom:3pt}
     .r-summary{text-align:justify;font-size:10pt;line-height:1.26}
     .r-skills{list-style:disc;padding-left:18pt}
     .r-skills li{font-size:10pt;line-height:1.24}
-    .r-exp{margin-bottom:4pt}
+    .r-exp{margin-bottom:3pt}
     .r-row{display:flex;justify-content:space-between;align-items:baseline}
     .r-company{font-weight:bold;font-size:10.5pt}
     .r-date{font-size:10pt;white-space:nowrap}
